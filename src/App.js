@@ -88,7 +88,7 @@ function App() {
       <Auth />
 
       <hr />
-      {auth?.currentUser?.uid || (
+      {auth?.currentUser?.uid && (
         <div>
           <input
             onChange={(e) => setNewMovieTitle(e.target.value)}
